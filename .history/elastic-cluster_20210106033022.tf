@@ -6,7 +6,7 @@ resource "aws_elasticsearch_domain" "example" {
 #   vpc_options.0.availability_zones
 
   cluster_config {
-    instance_type = var.elasticsearch_cluster_config_instance_type
+    instance_type = var.
   }
 
   snapshot_options {

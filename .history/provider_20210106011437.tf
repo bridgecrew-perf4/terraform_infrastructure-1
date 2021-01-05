@@ -1,5 +1,5 @@
 provider "aws" {
-  profile = var.aws_profile
+  profile = var.aws_region
   region  = var.aws_region
 }
 

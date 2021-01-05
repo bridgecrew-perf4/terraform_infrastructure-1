@@ -6,11 +6,11 @@ resource "aws_elasticsearch_domain" "example" {
 #   vpc_options.0.availability_zones
 
   cluster_config {
-    instance_type = var.elasticsearch_cluster_config_instance_type
+    instance_type = "r4.large.elasticsearch"
   }
 
   snapshot_options {
-    automated_snapshot_start_hour = var.elasticsearch_snapshot_options_automated_snapshot_start_hour
+    automated_snapshot_start_hour = var.elasticsearch_
   }
 
   tags = {

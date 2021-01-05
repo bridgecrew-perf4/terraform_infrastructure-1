@@ -6,7 +6,7 @@ resource "aws_subnet" "public_1" {
   cidr_block = var.public_subnet_cidr_block
 
   # The AZ for the subnet.
-  availability_zone = var.public_subnet_availability_zone
+  availability_zone = var.
 
   # Required for EKS. Instances launched into the subnet should be assigned a public IP address.
   map_public_ip_on_launch = true

@@ -1,6 +1,6 @@
 resource "aws_security_group" "allow_tls" {
   name        = var.security_group_name
-  description = var.security_group_description
+  description = vae
   vpc_id      = aws_vpc.main.id
 
   ingress {
