@@ -67,7 +67,7 @@ resource "aws_eks_cluster" "demo" {
 
   vpc_config {
     security_group_ids = [aws_security_group.allow_tls.id]
-    subnet_ids = aws_subnet.private_1.*.id
+    priav_subnets = aws_subnet.private_1.*.id
   }
 
   depends_on = [

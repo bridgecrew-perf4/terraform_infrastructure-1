@@ -66,8 +66,8 @@ resource "aws_eks_cluster" "demo" {
   role_arn = aws_iam_role.demo-cluster.arn
 
   vpc_config {
-    security_group_ids = [aws_security_group.allow_tls.id]
-    subnet_ids = aws_subnet.private_1.*.id
+    security_group_ids = [aws_security_group.demo-cluster.id]
+    public_subnets = aws_subnet.private_1.*.id
   }
 
   depends_on = [
